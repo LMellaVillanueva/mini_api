@@ -8,7 +8,7 @@ Tecnologías utilizadas -> Python 3.10+
 Requisitos previos -> Tener instalado Python 3.10 o superior.
 
 Instalación
-git clone URL
+git clone https://github.com/LMellaVillanueva/mini_api.git
 cd mini_api
 
 Ejecución

@@ -92,11 +92,14 @@ Respuesta esperada:
 
 ---
 
-## **Notas/Apuntes/Errores de la implementación**
+## **Progreso reciente**
 
-- Uso correcto de RealDictCursor para evitar tuplas
-- Diferencias entre MySQL y PostgreSQL
-- Manejo de transacciones ( commit / rollback )
-- Errores:
-    - can't adapt type 'dict'
-    - Placeholders incorrectos en SQL
+- Refactorización de la lógica de filtrado de usuarios mediante la función reutilizable `filter_users`, evitando duplicación de código en múltiples endpoints.
+- Implementación de funciones lambda para definir condiciones dinámicas de filtrado.
+- Mejora en la validación de datos utilizando:
+  - `.get()` para evitar errores por claves inexistentes.
+  - Valores por defecto en campos opcionales.
+  - Optimización de cálculos estadísticos:
+  - Cálculo previo de valores como edad máxima y mínima para evitar recomputaciones innecesarias.
+- Implementación de validación de emails mediante expresiones regulares (`re.fullmatch`).
+- Código más legible y mantenible, alineado con buenas prácticas de backend.
